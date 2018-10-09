@@ -24,7 +24,7 @@ jshell -J-cp -J./lib/chartsy-jshell.jar --execution rmi:host(localhost),port(520
 In the above command you may need to alter the `host` and `port` parameters to match the target JVM hostname and the port number
 on which the RMI registry was created.
 
-## (Un)security
+## (Un)Security
 
 It should be obvious that disastrous things can happen when bad people gain access to your JVM instance using JShell. To prevent bad things to happen
 the RMI port should not be publicly accessible.
