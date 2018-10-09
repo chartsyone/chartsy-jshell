@@ -4,6 +4,10 @@ This project provides a custom JShell execution engine that can connect to an al
 and execute code snippets in the target JVM using the Java RMI technology.
 
 The client and the host must both have project's compiled library `chartsy-jshell.jar` on its classpaths.
+### Technologies used
+* [JShell](https://en.wikipedia.org/wiki/JShell)
+* [Java RMI](https://en.wikipedia.org/wiki/Java_remote_method_invocation)
+* Some cryptography for password hashing.
 
 ## Example usage
 1. Start the host and run the following code somewhere from your codebase. The intention is to create an instance
@@ -20,7 +24,7 @@ jshell -J-cp -J./lib/chartsy-jshell.jar --execution rmi:host(localhost),port(520
 In the above command you may need to alter the `host` and `port` parameters to match the target JVM hostname and the port number
 on which the RMI registry was created.
 
-## Security
+## (Un)security
 
 It should be obvious that disastrous things can happen when bad people gain access to your JVM instance using JShell. To prevent bad things to happen
 the RMI port should not be publicly accessible.
