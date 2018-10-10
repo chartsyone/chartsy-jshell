@@ -3,7 +3,7 @@
 This project provides a custom JShell execution engine that can connect to an already-running remote JVM (host)
 and execute code snippets in the target JVM using the Java RMI technology.
 
-The client and the host must both have project's compiled library `chartsy-jshell.jar` on its classpaths.
+The client and the host must both have project's compiled library `chartsy-jshell.jar` on its classpaths. The client requires classes from the package `one.chartsy.jshell` on the classpath while host needs both `one.chartsy.jshell` and `one.chartsy.jshell.host`.
 ### Technologies used
 * [JShell](https://en.wikipedia.org/wiki/JShell)
 * [Java RMI](https://en.wikipedia.org/wiki/Java_remote_method_invocation)
