@@ -9,12 +9,13 @@ import one.chartsy.jshell.AccessDeniedException;
 import one.chartsy.jshell.JShellLink;
 
 /**
- * Provides a host-side implementation of the {@code JShellLink} service interface.
+ * Provides a host-side implementation of the {@code JShellLink} service
+ * interface.
  * <p>
  * The {@code JShellLinkFacade} is a remote object that need to be bound on the
  * host side to the RMI registry. The host side may use
- * {@link JShellLink#register(one.chartsy.jshell.JShellLink, java.rmi.registry.Registry, boolean) 
- * method for that purpose.
+ * {@link JShellLink#register(one.chartsy.jshell.JShellLink, java.rmi.registry.Registry, boolean)
+ * register} method for that purpose.
  *
  * @author Mariusz Bernacki
  */
